@@ -90,6 +90,7 @@ sap.ui.define(
                 // to call a different controller's method
                 // sap.ui.controller("zapp.opensource.com.zapp.controller.form").validateUserName();
             },
-        });
+        }
+    );
     }
 );
