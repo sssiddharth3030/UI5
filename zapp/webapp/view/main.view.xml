@@ -1,6 +1,139 @@
-<mvc:View controllerName="zapp.opensource.com.zapp.controller.main"
+<mvc:View
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    controllerName="zapp.opensource.com.zapp.controller.main"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+    <!-- This is a comment in HTML & XML -->
+    <Page
+        id="page"
+        title="{i18n>title}"
+        floatingFooter="true"
+    >
+        <!-- You can separate components into different views and call them like this -->
+        <!-- <mvc:XMLView viewName="zapp.opensource.com.zapp.view.form" /> -->
+
+        <VBox
+            class="sapUiSmallMargin"
+            id="form"
+        >
+            <f:SimpleForm
+                id="SimpleFormToolbar"
+                editable="true"
+                layout="ResponsiveGridLayout"
+                labelSpanXL="4"
+                labelSpanL="3"
+                labelSpanM="4"
+                labelSpanS="12"
+                adjustLabelSpan="false"
+                emptySpanXL="0"
+                emptySpanL="4"
+                emptySpanM="0"
+                emptySpanS="0"
+                columnsXL="2"
+                columnsL="1"
+                columnsM="1"
+                singleContainerFullSize="false"
+                ariaLabelledBy="Title1"
+            >
+                <f:toolbar>
+                    <Toolbar id="TB1">
+                        <Title
+                            id="Title1"
+                            text="Check if Valid User"
+                        />
+                        <ToolbarSpacer />
+                        <!-- <Button icon="sap-icon://settings" />
+                    <Button icon="sap-icon://drop-down-list" /> -->
+                    </Toolbar>
+                </f:toolbar>
+
+                <f:content>
+                    <Toolbar ariaLabelledBy="Title2">
+                        <Title
+                            id="Title2"
+                            text="User Details"
+                        />
+                        <ToolbarSpacer />
+                        <!-- <Button icon="sap-icon://settings" /> -->
+                    </Toolbar>
+
+                    <Label text="Name" />
+                    <Input
+                        id="name"
+                        placeholder="Name"
+                    />
+
+                    <Label text="Street/City." />
+                    <Input placeholder="Steet" id="street"/>
+                    <Input placeholder="City" id="city" >
+                        <layoutData>
+                            <l:GridData span="XL2 L1 M4 S4" />
+                        </layoutData>
+                    </Input>
+
+                    <Label text="Phone/Email" />
+                    <Input placeholder="Phone" id="phone">
+                        <layoutData>
+                            <l:GridData span="XL2 L1 M3 S4" />
+                        </layoutData>
+                    </Input>
+                    <Input
+                        id="email"
+                        placeholder="Email"
+                    />
+
+                    <!-- <Label text="Country" /> -->
+                    <!-- <Select
+                    id="country"
+                    selectedKey="{Country}"
+                >
+                    <items>
+                        <core:Item
+                            text="England"
+                            key="England"
+                        />
+                        <core:Item
+                            text="Germany"
+                            key="Germany"
+                        />
+                        <core:Item
+                            text="USA"
+                            key="USA"
+                        />
+                    </items>
+                </Select> -->
+
+                    <Toolbar ariaLabelledBy="Title3">
+                        <Title
+                            id="Title3"
+                            text="Check User Name"
+                        />
+                        <ToolbarSpacer />
+                        <!-- <Button icon="sap-icon://settings" /> -->
+                    </Toolbar>
+
+                    <Label text="Username	" />
+                    <Input
+                        id="username"
+                        placeholder="Please Enter Username to Search here ..."
+												value="Samantha"
+                    />
+                </f:content>
+            </f:SimpleForm>
+        </VBox>
+
+        <footer>
+            <OverflowToolbar>
+                <ToolbarSpacer />
+                <Button
+                    text="Check"
+                    type="Emphasized"
+                    press="onCheck"
+                />
+            </OverflowToolbar>
+        </footer>
     </Page>
 </mvc:View>

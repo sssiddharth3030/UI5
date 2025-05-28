@@ -20,3 +20,13 @@ An SAP Fiori application.
 
 The above are preconfigured in BAS .
 
+### Structure 
+Remember , files & folders are case sensitive .
+
+webapp
+|
+L--> controller -> Here is where you write the logic
+L--> view -> Here is where you design the app
+L--> i18n -> Here the app name , title & properties are stored . 
+L--> manifest.json
+L--> Component.js

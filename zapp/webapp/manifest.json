@@ -7,8 +7,8 @@
     "applicationVersion": {
       "version": "0.0.1"
     },
-    "title": "{{appTitle}}",
-    "description": "{{appDescription}}",
+    "title": "ZAPP",
+    "description": "Welcome to The ZAPP",
     "resources": "resources.json",
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
@@ -33,7 +33,7 @@
     }
   },
   "sap.ui5": {
-    "flexEnabled": true,
+    "flexEnabled": false,
     "dependencies": {
       "minUI5Version": "1.136.1",
       "libs": {
