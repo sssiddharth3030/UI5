@@ -46,13 +46,22 @@
                 <!-- <Button icon="sap-icon://settings" /> -->
             </Toolbar>
 
-            <Label text="Name" />
+            <Label text="Username/Name" />
+            <Input
+                id="user"
+                placeholder="Username"
+            />
+
             <Input
                 id="name"
                 placeholder="Name"
-            />
+            >
+                <layoutData>
+                    <l:GridData span="XL2 L1 M5 S4" />
+                </layoutData>
+            </Input>
 
-            <Label text="Street/City." />
+            <Label text="Street/City" />
             <Input
                 placeholder="Steet"
                 id="street"
@@ -80,27 +89,6 @@
                 placeholder="Email"
             />
 
-            <!-- <Label text="Country" /> -->
-            <!-- <Select
-                    id="country"
-                    selectedKey="{Country}"
-                >
-                    <items>
-                        <core:Item
-                            text="England"
-                            key="England"
-                        />
-                        <core:Item
-                            text="Germany"
-                            key="Germany"
-                        />
-                        <core:Item
-                            text="USA"
-                            key="USA"
-                        />
-                    </items>
-                </Select> -->
-
             <Toolbar ariaLabelledBy="Title3">
                 <Title
                     id="Title3"
@@ -110,7 +98,7 @@
                 <!-- <Button icon="sap-icon://settings" /> -->
             </Toolbar>
 
-            <Label text="Username	" />
+            <Label text="Username" />
             <Input
                 id="username"
                 placeholder="Please Enter Username to Search here ..."
