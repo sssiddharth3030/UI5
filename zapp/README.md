@@ -14,7 +14,8 @@ An SAP Fiori application.
 
  --> for arch linux , use below command to install the three packages
  ``` 
-    sudo pacman -S nodejs npm yo
+    sudo pacman -S nodejs npm
+    sudo npm install --global yo
  ```
 
 2. Make sure you have 'sap application wizard' extension in vscode , as it is provides an GUI for 'SAP Fiori Application Generator' .
